@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bpen: skeleton CSS:general</title>
+    <link rel='stylesheet' href='css/styles.css'>
+    <style>
+      #nav{
+        position:fixed;
+        top:75px;
+        left:0px;
+        width:200px;
+      }
+      #nav ul{
+        list-style-type:none;
+      }
+      #nav ul li{
+        margin-top:10px;
+        height:100%;
+      }
+      #nav ul li a{
+        display:block;
+        text-decoration:none;
+        font-weight:700;
+        font-size:18px;
+        padding:8px 12px;
+        height:100%;
+        color: rgb(82,82,82);
+      }
+      #nav ul li a:hover{
+        cursor:pointer;
+        background-color:#ccc;
+        border-radius:4px;
+      }
+      #nav ul li a.active{
+        background-color:#bbb;
+        border-radius:4px;
+      }
+
+      #container{
+        width:800px;
+        margin: 30px auto;
+        text-align:left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='nav'>
+      <ul>
+        <li>
+          <a href='./general.html' class='active'>Basic Styling</a>
+        </li>
+        <li>
+          <a href='./forms.html'>Forms</a>
+        </li>
+        <li>
+          <a href='./tables.html'>Tables</a>
+        </li>
+        <li>
+          <a href='./boxes.html'>Boxing</a>
+        </li>
+      </ul>
+    </div>
+    <div id='container'>
+      <h1>bpen: skeleton CSS</h1>
+      <h2>General Styling</h2>
+      <p>
+        Because this is a kind of bare bones CSS library, I've tried to keep
+        the base styling to a minimum.  This has allowed me to quickly build on
+        it for each new project without having to figure out any conflicting
+        styles.
+      </p>
+      <h3>Global Layout</h3>
+      <p>
+        Both <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code> have the
+        following margin and padding styling reset to make it easier to style across
+        browsers.
+        <pre class='box'>
+html,body{
+  margin:0;
+  padding:0;
+}</pre>
+      </p>
+      <h3>Fonts</h3>
+      <p>
+      I've generally found that I like to stick to only 2 or 3 fonts per web
+      application.  For general heading and paragraph font I use:
+      <pre class='box'>
+font-family: Georgia, Times, 'Times New Roman', serif;</pre>
+      </p>
+      <h3>Headings</h3>
+      <p>
+        For headings, I use a simple stepdown technique of matching font size
+        and line height:
+      </p>
+      <div class='indent'>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </div>
+      <h3>Links</h3>
+      <p>
+        I generally like for in text links to stand out, so they are typically
+        a different <a href='#'>color</a>.  When hovering on them, they are
+        <a href='#' style='text-decoration:underline'>underlined.</a>
+      </p>
+
+      <h3>Buttons</h3>
+      <p>
+        <code>&lt;button&gt;</code> , <code>&lt;input type='button'&gt;</code> ,
+        and <code>&lt;input type='submit'&gt;</code> all have default styling
+        that makes them stand out as actionable items.
+      </p>
+      <div>
+        <button>Button</button> <input type='button' value='input type=button' />
+        <input type='submit' value='input type=submit' />
+      </div>
+      <p>
+        To give a link the same styling, add the <code>.button</code> class to
+        it.
+      </p>
+      <div>
+        <a href='#' class='button'>Link</a>
+      </div>
+      
+      <h3>Alignment</h3>
+      Use the classes <code>.left</code> , <code>.right</code> , or <code>.top</code>
+      to align text within any container.
+    </div>
+  </body>
+</html>

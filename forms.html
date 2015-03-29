@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bpen: skeleton CSS:general</title>
+    <link rel='stylesheet' href='css/styles.css'>
+    <style>
+      #nav{
+        position:fixed;
+        top:75px;
+        left:0px;
+        width:200px;
+      }
+      #nav ul{
+        list-style-type:none;
+      }
+      #nav ul li{
+        margin-top:10px;
+        height:100%;
+      }
+      #nav ul li a{
+        display:block;
+        text-decoration:none;
+        font-weight:700;
+        font-size:18px;
+        padding:8px 12px;
+        height:100%;
+        color: rgb(82,82,82);
+      }
+      #nav ul li a:hover{
+        cursor:pointer;
+        background-color:#ccc;
+        border-radius:4px;
+      }
+      #nav ul li a.active{
+        background-color:#bbb;
+        border-radius:4px;
+      }
+
+      #container{
+        width:800px;
+        margin: 30px auto;
+        text-align:left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='nav'>
+      <ul>
+        <li>
+          <a href='./general.html'>Basic Styling</a>
+        </li>
+        <li>
+          <a href='./forms.html' class='active'>Forms</a>
+        </li>
+        <li>
+          <a href='./tables.html'>Tables</a>
+        </li>
+        <li>
+          <a href='./boxes.html'>Boxing</a>
+        </li>
+      </ul>
+    </div>
+    <div id='container'>
+      <h1>bpen: skeleton CSS</h1>
+      <h2>Forms</h2>
+      <p>
+        This CSS library provides three different types of form layouts
+        that can be activated with a single class at the form level
+      </p>
+
+      <h3>Default form</h3>
+      <p>
+        On forms with default styling, all form elements are given
+        <code>display:inline-block</code> CSS.
+      </p>
+      <div>
+        <form>
+          <label>First Name</label>
+          <input type='text' />
+          <label>Last Name</label>
+          <input type='text' />
+          <button type='submit'>Submit</button>
+        </form>
+      </div>
+
+      <h3>Stacked form</h3>
+      <p>
+        Stacked forms are arranged with the field label directly above
+        the field.  Add the <code>.stacked</code> class to the form to
+        activate.
+      </p>
+      <div>
+        <form class='stacked'>
+          <label>First Name</label>
+          <input type='text' />
+          <label>Last Name</label>
+          <input type='text' />
+          <label>
+            Color
+          </label>
+          <label class='radio'>
+            <input type='radio'/> Red
+          </label>
+          <label class='radio'>
+            <input type='radio'/> Blue
+          </label>
+          <button type='submit'>Submit</button>
+        </form>
+      </div>
+
+      <h3>Block form</h3>
+      <p>
+        Block style forms with left aligned labels can be created using
+        the <code>.block-left</code> class on a form and putting each
+        label/input pair in thier own <code>&lt;div&gt;</code> with a
+        <code>.group</code> class
+      </p>
+      <div>
+        <form class='block-left'>
+          <div class='group'>
+          <label>First Name</label>
+          <input type='text' />
+          </div>
+          <div class='group'>
+          <label>Last Name</label>
+          <input type='text' />
+          </div>
+          <div class='group'>
+          <label>
+            Color
+          </label>
+          <span class='inline top'>
+          <label class='radio'>
+            <input type='radio'/> Red
+          </label>
+          <label class='radio'>
+            <input type='radio'/> Blue
+          </label>
+          </span>
+          </div>
+          <div class='group'>
+          <button type='submit'>Submit</button>
+          </div>
+        </form>
+      </div>
+      
+      <p>
+        Block style forms with right aligned labels can be created using
+        the <code>.block-right</code> class on a form and putting each
+        label/input pair in thier own <code>&lt;div&gt;</code> with a
+        <code>.group</code> class
+      </p>
+      <div>
+        <form class='block-right'>
+          <div class='group'>
+          <label>First Name</label>
+          <input type='text' />
+          </div>
+          <div class='group'>
+          <label>Last Name</label>
+          <input type='text' />
+          </div>
+          <div class='group'>
+          <label>
+            Color
+          </label>
+          <span class='inline top'>
+          <label class='radio'>
+            <input type='radio'/> Red
+          </label>
+          <label class='radio'>
+            <input type='radio'/> Blue
+          </label>
+          </span>
+          </div>
+          <div class='group'>
+          <button type='submit'>Submit</button>
+          </div>
+        </form>
+      </div>
+      
+      <h3>Alignment</h3>
+      You can override the alignment of labels by using the <code>.left</code>
+      and <code>.right</code> classes on a label
+      <div>
+        <form class='block-right'>
+          <div class='group'>
+          <label>First Name</label>
+          <input type='text' />
+          </div>
+          <div class='group'>
+          <label class='left'>Left aligned</label>
+          <input type='text' />
+          </div>
+          <div class='group'>
+          <label>
+            Color
+          </label>
+          <span class='inline top'>
+          <label class='radio'>
+            <input type='radio'/> Red
+          </label>
+          <label class='radio'>
+            <input type='radio'/> Blue
+          </label>
+          </span>
+          </div>
+          <div class='group'>
+          <button type='submit'>Submit</button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <form class='block-left'>
+          <div class='group'>
+          <label>First Name</label>
+          <input type='text' />
+          </div>
+          <div class='group'>
+          <label class='right'>Right aligned</label>
+          <input type='text' />
+          </div>
+          <div class='group'>
+          <label>
+            Color
+          </label>
+          <span class='inline top'>
+          <label class='radio'>
+            <input type='radio'/> Red
+          </label>
+          <label class='radio'>
+            <input type='radio'/> Blue
+          </label>
+          </span>
+          </div>
+          <div class='group'>
+          <button type='submit'>Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

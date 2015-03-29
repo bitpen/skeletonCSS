@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bpen: skeleton CSS:general</title>
+    <link rel='stylesheet' href='css/styles.css'>
+    <style>
+      #nav{
+        position:fixed;
+        top:75px;
+        left:0px;
+        width:200px;
+      }
+      #nav ul{
+        list-style-type:none;
+      }
+      #nav ul li{
+        margin-top:10px;
+        height:100%;
+      }
+      #nav ul li a{
+        display:block;
+        text-decoration:none;
+        font-weight:700;
+        font-size:18px;
+        padding:8px 12px;
+        height:100%;
+        color: rgb(82,82,82);
+      }
+      #nav ul li a:hover{
+        cursor:pointer;
+        background-color:#ccc;
+        border-radius:4px;
+      }
+      #nav ul li a.active{
+        background-color:#bbb;
+        border-radius:4px;
+      }
+
+      #container{
+        width:800px;
+        margin: 30px auto;
+        text-align:left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='nav'>
+      <ul>
+        <li>
+          <a href='./general.html'>Basic Styling</a>
+        </li>
+        <li>
+          <a href='./forms.html'>Forms</a>
+        </li>
+        <li>
+          <a href='./tables.html' class='active'>Tables</a>
+        </li>
+        <li>
+          <a href='./boxes.html'>Boxing</a>
+        </li>
+      </ul>
+    </div>
+    <div id='container'>
+      <h1>bpen: skeleton CSS</h1>
+      <h2>Tables</h2>
+      <p>
+        Clean and simple is how I prefer my tables.  I always want the data
+        being displayed to stand out and not have the viewer distracted by the
+        styling of the table. There are actually many different styles to choose
+        from in this CSS library when it comes to tables. Each style requires only
+        a simple class at the table level.
+      </p>
+      <div class='blockquote'>
+        NOTE: When building tables, make sure to include <code>&lt;thead&gt;</code>
+        and <code>&lt;tbody&gt;</code> tags, and to use <code>&lt;th&gt;</code>
+        tags for table header cells.
+      </div>
+      <h3>Default Table</h3>
+      <p>
+        The default table style requires no additional markup.  Column headers
+        are centered and bolded, and the table header is separated from the
+        content by a thick horizontal line.  No other table borders are present.
+      </p>
+        <div class='box'>
+         <div class='highlight-box-title'>Markup</div>
+         <pre>
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First Name&lt;/th&gt;
+      &lt;th&gt;Last Name&lt;/th&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+&lt;/table&gt; </pre>
+        </div>
+
+      <div>
+        <table>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+       <h3>Vertically Lined Table</h3>
+       <p>
+         Add the <code>.vertical</code> class to the table to get inner
+         vertical borders that extend the height of the table
+       </p>
+         <div class='box'>
+           <div class='highlight-box-title'>Markup</div>
+            <pre>
+&lt;table class='vertical'&gt;
+...
+&lt;/table&gt;</pre>
+          </div>
+
+      <div>
+        <table class='vertical'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+       <h3>Horizontally Lined Table</h3>
+       <p>
+         The <code>.horizontal</code> class adds horizontal inner borders
+       </p>
+         <div class='box'>
+           <div class='highlight-box-title'>Markup</div>
+            <pre>
+&lt;table class='horizontal'&gt;
+...
+&lt;/table&gt;</pre>
+          </div>
+      <div>
+        <table class='horizontal'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>Inner Lined Table</h3>
+       <p>
+         The <code>.inner</code> class adds both vertical and horizontal inner borders
+       </p>
+         <div class='box'>
+           <div class='highlight-box-title'>Markup</div>
+            <pre>
+&lt;table class='inner'&gt;
+...
+&lt;/table&gt;</pre>
+          </div>
+      <div>
+        <table class='inner'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>Outer Lined Table</h3>
+        <p>
+         The <code>.outer</code> class adds a simple border around just
+         the outer edge of the table
+       </p>
+         <div class='box'>
+           <div class='highlight-box-title'>Markup</div>
+            <pre>
+&lt;table class='outer'&gt;
+...
+&lt;/table&gt;</pre>
+          </div>
+      <div>
+        <table class='outer'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>Full Bordered Table</h3>
+        <p>
+         The <code>.full</code> class allows for a simple way to turn on
+         all borders without having to specify each class individiually
+       </p>
+         <div class='box'>
+           <div class='highlight-box-title'>Markup</div>
+            <pre>
+&lt;table class='horizontal'&gt;
+...
+&lt;/table&gt;</pre>
+        </div>
+
+        <div>
+        <table class='full'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+        <h3>Striped Table</h3>
+        <p>
+         The <code>.striped</code> used the CSS <code>:nth-child</code> available
+         in newer browsers to provide alternate row coloring
+       </p>
+         <div class='box'>
+           <div class='highlight-box-title'>Markup</div>
+            <pre>
+&lt;table class='striped'&gt;
+...
+&lt;/table&gt;</pre>
+        </div>
+
+        <div>
+        <table class='striped'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>Selectable Table</h3>
+        <p>
+         The <code>.selectable</code> class adds <code>:hover</code> indication
+         to each row to signify they are selectable
+       </p>
+         <div class='box'>
+           <div class='highlight-box-title'>Markup</div>
+            <pre>
+&lt;table class='selectable'&gt;
+...
+&lt;/table&gt;</pre>
+        </div>
+
+        <div>
+        <table class='selectable'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </body>
+</html>

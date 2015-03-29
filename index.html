@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel='stylesheet' href='css/styles.css'>
+    <title>
+      bpen Style Lightr
+    </title>
+  </head>
+  <body>
+    <div>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </div>
+    <div>
+      <p>
+        This is normal paragraph text
+      </p>
+    </div>
+    <div>
+      <h2>Forms</h2>
+      <p>
+        This is a form with default styling
+      </p>
+      <form>
+        <label>First Name</label>
+        <input type='text' />
+        <label>Last Name</label>
+        <input type='text' />
+        <button type='submit'>Submit</button>
+      </form>
+      <p>This is a stacked form with left hand labels, aligned right</p>
+      <form class='bpen-stacked-ralign'>
+        <div class='bpen-control-group'>
+          <label>First Name</label>
+          <input type='text' />
+        </div>
+        <div class='bpen-control-group'>
+          <label>Last Name</label>
+          <input type='text' />
+        </div>
+        <div class='bpen-control-group'>
+          <label>Favorite color</label>
+          <span class='bpen-inline bpen-talign'>
+            <input type='radio' /><label>Red</label><br />
+            <input type='radio' /><label>Blue</label>
+          </span>
+        </div>
+        <div class='bpen-control-group'>
+          <label>Favorite candy</label>
+          <select>
+            <option></option>
+            <option>Chocolate</option>
+            <option>Sweets</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class='bpen-control-group'>
+          <label>Email Me</label>
+          <input type='checkbox' />
+        </div>
+        <div class='bpen-control-group'>
+          <label>Comments</label>
+          <textarea class='bpen-talign'></textarea>
+        </div>
+        <div class='bpen-control-group'>
+          <button type='submit'>Submit</button>
+        </div>
+      </form>
+      <p>
+        This is a stacked form with left hand labels, aligned left
+      </p>
+      <form class='bpen-stacked-lalign'>
+        <div class='bpen-control-group'>
+          <label>First Name</label>
+          <input type='text' />
+        </div>
+        <div class='bpen-control-group'>
+          <label>Last Name</label>
+          <input type='text' />
+        </div>
+        <div class='bpen-control-group'>
+          <label>Favorite color</label>
+          <span class='bpen-inline bpen-talign'>
+            <input type='radio' /><label>Red</label><br />
+            <input type='radio' /><label>Blue</label>
+          </span>
+        </div>
+        <div class='bpen-control-group'>
+          <label>Favorite candy</label>
+          <select>
+            <option></option>
+            <option>Chocolate</option>
+            <option>Sweets</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class='bpen-control-group'>
+          <label>Email Me</label>
+          <input type='checkbox' />
+        </div>
+        <div class='bpen-control-group'>
+          <label>Comments</label>
+          <textarea class='bpen-talign'></textarea>
+        </div>
+        <div class='bpen-control-group'>
+          <button type='submit'>Submit</button>
+        </div>
+      </form>
+      <p>
+        This is a stacked form with top aligned labels
+      </p>
+      <form class='bpen-stacked-talign'>
+        <div class='bpen-control-group'>
+          <label>First Name</label>
+          <input type='text' />
+        </div>
+        <div class='bpen-control-group'>
+          <label>Last Name</label>
+          <input type='text' />
+        </div>
+         <div class='bpen-control-group'>
+          <label>Favorite color</label>
+          <span class='bpen-inline bpen-talign'>
+            <input type='radio' /><label>Red</label><br />
+            <input type='radio' /><label>Blue</label>
+          </span>
+        </div>
+        <div class='bpen-control-group'>
+          <label>Favorite candy</label>
+          <select>
+            <option></option>
+            <option>Chocolate</option>
+            <option>Sweets</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class='bpen-control-group'>
+          <input type='checkbox' />
+          <label>Email Me</label>
+        </div>
+        <div class='bpen-control-group'>
+          <label>Comments</label>
+          <textarea class='bpen-talign'></textarea>
+        </div>
+        <div class='bpen-control-group'>
+          <button type='submit'>Submit</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <p>
+        Default table
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <p>
+        Simple border table
+      </p>
+      <table class='bpen-table-vertical'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <p>
+        Simple border table
+      </p>
+      <table class='bpen-table-horizontal'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div>
+      <p>
+        Simple border table
+      </p>
+      <table class='bpen-table-inner'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <p>
+        Simple border table
+      </p>
+      <table class='bpen-table-outer'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div>
+      <p>
+        Simple border table
+      </p>
+      <table class='bpen-table-full'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div>
+      <p>
+        Simple border table
+      </p>
+      <table class='bpen-table-striped'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div>
+      <p>
+        Simple border table
+      </p>
+      <table class='bpen-table-selectable'>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              John
+            </td>
+            <td>
+              Doe
+            </td>
+            <td>
+              33
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Jane
+            </td>
+            <td>
+              Smith
+            </td>
+            <td>
+              45
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Pete
+            </td>
+            <td>
+              Taylor
+            </td>
+            <td>
+              18
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style='width:500px;'>
+      <div class='bpen-highlight-box'>
+        <div class='bpen-box-title'>This is the box header</div>
+        <p>This is the box content</p>
+        <p>More content here.</p>
+        <div class='bpen-box-subtitle'>This is a subtitle in a box</div>
+        <p>More sub content</p>
+        <p>Continued sub content</p>
+      </div>
+    </div>
+    <div style='width:500px;'>
+      <div class='bpen-box'>
+        <div class='bpen-highlight-box-title'>This is the box header</div>
+        <p>This is the box content</p>
+        <p>More content here.</p>
+        <div class='bpen-highlight-box-subtitle'>This is the box header</div>
+        <p>This is the box content</p>
+        <p>More content here.</p>
+      </div>
+    </div>
+    <div>
+      <div class='bpen-blockquote'>
+        This is a blockquote. <br />
+        It is offset and highlighted from normal paragraph text.
+      </div>
+    </div>
+  </body>
+</html>

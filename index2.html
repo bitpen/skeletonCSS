@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bpen: skeleton CSS</title>
+    <link rel='stylesheet' href='css/styles.css'>
+    <style>
+      #nav{
+        position:fixed;
+        top:75px;
+        left:0px;
+        width:200px;
+      }
+      #nav ul{
+        list-style-type:none;
+      }
+      #nav ul li{
+        margin-top:10px;
+        height:100%;
+      }
+      #nav ul li a{
+        display:block;
+        text-decoration:none;
+        font-weight:700;
+        font-size:18px;
+        padding:8px 12px;
+        height:100%;
+      }
+      #nav ul li a:hover{
+        cursor:pointer;
+        background-color:#ccc;
+        border-radius:4px;
+      }
+      #nav ul li a.active{
+        background-color:#bbb;
+      }
+
+      #container{
+        width:800px;
+        margin: 30px auto;
+        text-align:left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='nav'>
+      <ul>
+        <li>
+          <a href='./general.html'>Basic Styling</a>
+        </li>
+        <li>
+          <a href='./forms.html'>Forms</a>
+        </li>
+        <li>
+          <a href='./tables.html'>Tables</a>
+        </li>
+        <li>
+          <a href='./boxes.html'>Boxing</a>
+        </li>
+      </ul>
+    </div>
+    <div id='container'>
+      <h1>bpen: skeleton CSS</h1>
+      <p>
+        I've always found most CSS frameworks to be either too big or too
+        complicated to quickly start using.  Couple that with the mindset that basic
+        CSS really isn't all that complicate and I generally end up needing the
+        same basic layout/style structure, and I arrived at the CSS library
+        presented here.
+      </p>
+      <p>
+        This skeleton CSS is not necessarily meant to be a fully fleshed out
+        CSS library for a complex site.  However, it is a great jumping off
+        point for quickly getting started with some basic, decent looking CSS
+        when starting a new project.
+      </p>
+      <p>
+        Some of the things to notice about this CSS framework:
+        <ul>
+          <li>It is lightweight in size and features</li>
+          <li>It is minimalistic.  Clean simple styling and not much color,
+          except for actionable items.
+          </li>
+        </ul>
+      </p>
+    </div>
+  </body>
+</html>

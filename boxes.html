@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bpen: skeleton CSS:general</title>
+    <link rel='stylesheet' href='css/styles.css'>
+    <style>
+      #nav{
+        position:fixed;
+        top:75px;
+        left:0px;
+        width:200px;
+      }
+      #nav ul{
+        list-style-type:none;
+      }
+      #nav ul li{
+        margin-top:10px;
+        height:100%;
+      }
+      #nav ul li a{
+        display:block;
+        text-decoration:none;
+        font-weight:700;
+        font-size:18px;
+        padding:8px 12px;
+        height:100%;
+        color: rgb(82,82,82);
+      }
+      #nav ul li a:hover{
+        cursor:pointer;
+        background-color:#ccc;
+        border-radius:4px;
+      }
+      #nav ul li a.active{
+        background-color:#bbb;
+        border-radius:4px;
+      }
+
+      #container{
+        width:800px;
+        margin: 30px auto;
+        text-align:left;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='nav'>
+      <ul>
+        <li>
+          <a href='./general.html'>Basic Styling</a>
+        </li>
+        <li>
+          <a href='./forms.html'>Forms</a>
+        </li>
+        <li>
+          <a href='./tables.html'>Tables</a>
+        </li>
+        <li>
+          <a href='./boxes.html' class='active'>Boxing</a>
+        </li>
+      </ul>
+    </div>
+    <div id='container'>
+      <h1>bpen: skeleton CSS</h1>
+      <h2>Boxing</h2>
+        <p>
+          Boxes and blockquotes provide a great way to make important
+          information stand out within the context of the page.
+        </p>
+
+      <h3>Simple Box</h3>
+      <div class='box'>
+         Add the <code>.box</code> class to any <code>&lt;div&gt;</code> to
+        wrap the contents in a borders.
+      </div>
+
+      <h3>Highlighted Box</h3>
+      <div class='highlight-box'>
+         Add the <code>.highlight-box</code> class to any <code>&lt;div&gt;</code> to
+        wrap the contents in a borders and give the contents a background color.
+      </div>
+
+      <h3>Box Title</h3>
+      <p>Give a box a header title.</p>
+      <div class='box'>
+         <div class='box-title'>
+           Markup
+         </div>
+         <pre>
+&lt;div class='box&gt;
+  &lt;div class='box-title'&gt;
+    Markup
+  &lt;/div&gt;
+  Box Content
+&lt;/div&gt;
+         </pre>
+      </div>
+
+      <h3>Highlighted Box Title</h3>
+      <p>Give a box a highlighted header title.</p>
+      <div class='box'>
+         <div class='highlight-box-title'>
+           Markup
+         </div>
+         <pre>
+&lt;div class='box&gt;
+  &lt;div class='highlight-box-title'&gt;
+    Markup
+  &lt;/div&gt;
+  Box Content
+&lt;/div&gt;
+         </pre>
+      </div>
+
+      <h3>Box Sub-Title</h3>
+      <p>Give a box a sub title.</p>
+      <div class='box'>
+         <div class='box-title'>
+           Markup
+         </div>
+         <pre>
+&lt;div class='box&gt;
+  &lt;div class='box-title'&gt;
+    Markup
+  &lt;/div&gt;
+  Box Content
+  &lt;div class='box-subtitle'&gt;
+    Box subtitle
+  &lt;/div&gt;
+  Sub Content
+&lt;/div&gt;
+         </pre>
+         <div class='box-subtitle'>
+           Box sub header
+         </div>
+         More content below the sub header
+      </div>
+
+      <h3>Box Highlighted Sub-Title</h3>
+      <p>Give a box a sub title.</p>
+      <div class='box'>
+         <div class='box-title'>
+           Markup
+         </div>
+         <pre>
+&lt;div class='box&gt;
+  &lt;div class='box-title'&gt;
+    Markup
+  &lt;/div&gt;
+  Box Content
+  &lt;div class='highlight-box-subtitle'&gt;
+    Box subtitle
+  &lt;/div&gt;
+  Sub Content
+&lt;/div&gt;
+         </pre>
+         <div class='highlight-box-subtitle'>
+           Box sub header
+         </div>
+         More content below the sub header
+      </div>
+
+      <h3>Blockquote</h3>
+      <div class='blockquote'>
+        Use <code>.blockquote</code> on a <code>&lt;div&gt;</code> to highlight
+        quoted text or provide a warning or special note of interest.
+      </div>
+
+      <h3>Code</h3>
+      Use the <code>&lt;code&gt;</code> tag to highlight pieces of code or signify
+      which keys to press.
+    </div>
+  </body>
+</html>
